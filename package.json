@@ -1,0 +1,27 @@
+{
+  "name": "terminal-roast",
+  "displayName": "Terminal Roast",
+  "description": "Play hilarious meme sounds when your terminal throws errors.",
+  "version": "0.0.1",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "keywords": [
+    "vscode",
+    "terminal",
+    "error",
+    "meme",
+    "fun",
+    "sound",
+    "developer",
+    "productivity",
+    "roast",
+    "devtools"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
