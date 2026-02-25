@@ -1,11 +1,34 @@
 {
   "name": "terminal-roast",
-  "displayName": "Terminal Roast",
+  "displayName": "Terminal Roast 🔥",
   "description": "Play hilarious meme sounds when your terminal throws errors.",
   "version": "0.0.1",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
+  "publisher": "tarun-joshi",
+  "engines": {
+    "vscode": "1.109.0"
+  },
+  "categories": [
+    "Other",
+    "Debuggers"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "enabledApiProposals": [
+    "terminalDataWriteEvent"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "terminal-roast.testSound",
+        "title": "Terminal Roast: Test Sound"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "bun run scripts/build.ts",
+    "package": "bun run build && vsce package",
+    "lint": "eslint src"
+  },
   "keywords": [
     "vscode",
     "terminal",
@@ -19,9 +42,12 @@
     "devtools"
   ],
   "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+    "@types/bun": "latest",
+    "@types/vscode": "1.109.0",
+    "@typescript-eslint/eslint-plugin": "8.56.1",
+    "@typescript-eslint/parser": "8.56.1",
+    "bun-types": "latest",
+    "eslint": "10.0.2",
+    "typescript-eslint": "8.56.1"
   }
 }
