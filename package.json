@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "publisher": "tarun-joshi",
   "engines": {
-    "vscode": "1.109.0"
+    "vscode": "^1.80.0"
   },
   "categories": [
     "Other",
